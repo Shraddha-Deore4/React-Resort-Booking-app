@@ -1,70 +1,201 @@
-# Getting Started with Create React App
+# 🏨 Resort Room Booking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application that allows users to browse resort rooms, view room details, and make online reservations. The project is built using React for the frontend and Node.js, Express.js, and MongoDB for the backend.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Features
 
-### `npm start`
+- 🏠 Responsive Home Page
+- 🛏️ Browse Different Room Categories
+- 📖 View Room Details
+- 📝 Online Room Booking Form
+- ✅ Client-side Form Validation
+- 🔒 Backend API Integration
+- 💾 Booking Data Stored in MongoDB
+- 📱 Responsive User Interface
+- ⚡ Fast Navigation using React Router
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+### Frontend
+- React.js
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript (ES6)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
+- Node.js
+- Express.js
 
-### `npm run build`
+### Database
+- MongoDB
+- Mongoose
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+Resort-Room-Booking-System/
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── Components/
+│   │   ├── Pages/
+│   │   ├── App.js
+│   │   └── index.js
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── .env
+│
+├── package.json
+└── README.md
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## ⚙️ Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Clone Repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+git clone https://github.com/your-username/resort-room-booking-system.git
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+### 2. Install Frontend Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd frontend
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### 3. Install Backend Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cd backend
+npm install
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 4. Configure Environment Variables
 
-### Making a Progressive Web App
+Create a `.env` file inside the **backend** folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```env
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/resortBookingDB
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 5. Start Backend
 
-### Deployment
+```bash
+npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+### 6. Start Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm start
+```
+
+The application will run at:
+
+Frontend:
+```
+http://localhost:3000
+```
+
+Backend:
+```
+http://localhost:5000
+```
+
+---
+
+## 📌 API Endpoint
+
+### Create Booking
+
+**POST**
+
+```
+/api/bookings
+```
+
+Stores booking information in MongoDB.
+
+---
+
+## 📸 Screenshots
+
+- Home Page
+- Room Listing
+- Room Details
+- Booking Form
+- Booking Confirmation
+
+*(Add screenshots here after uploading images.)*
+
+---
+
+## 📊 System Architecture
+
+```
+User
+   │
+   ▼
+React Frontend
+   │
+REST API
+   │
+Node.js + Express
+   │
+Mongoose
+   │
+MongoDB
+```
+
+---
+
+## 🚀 Future Enhancements
+
+- User Authentication (JWT)
+- Admin Dashboard
+- Room Availability Management
+- Online Payment Integration
+- Booking History
+- Email Confirmation
+- Reviews & Ratings
+
+---
+
+## 👩‍💻 Author
+
+**Shraddha Deore**
+
+Computer Engineering Student
+
+---
+
+## 📄 License
+
+This project is developed for educational and internship purposes.
